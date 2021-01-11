@@ -1,0 +1,35 @@
+<?xml-stylesheet type="text/css" href="5.css" ?>
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<h1> STUDENTS DESCRIPTION </h1>
+</head>
+<students>
+<student>
+<USN>USN : 1CE17CS115</USN>
+<name>NAME : Shaziya Kousar</name>
+<college>COLLEGE : CEC</college>
+<branch>BRANCH : Computer Science and Engineering</branch>
+<year>YEAR : 2017</year>
+<e-mail>E-Mail : shaziyakousar13@gmail.com</e-mail>
+</student>
+<student>
+<USN>USN : 1CE17CS151</USN>
+<name>NAME : ABC</name>
+<college>COLLEGE : CEC</college>
+<branch>BRANCH : computer Science and Engineering</branch>
+<year>YEAR : 2017</year>
+<e-mail>E-Mail : abc@gmail.com</e-mail>
+</student>
+<student>
+<USN>USN : 1CE17CS152</USN>
+<name>NAME : xyz</name>
+<college>COLLEGE : CEC</college>
+<branch>BRANCH : computer science and Engineering
+</branch>
+<year>YEAR : 2017</year>
+<e-mail>E-Mail : xyz@gmail.com</e-mail>
+</student>
+</students>
+</html>
