@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LAB PROGRAM-2</title>
+</head>
+<style>
+	
+body
+
+{ 
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-image:url("prog2img.jpg");
+  background-position: no-repeat;
+  background-size:cover;
+  min-height: 100vh;
+ 
+}
+table,tr,td
+{
+	border: solid black;
+  border-width: 4px;
+    width: 25%;
+    text-align:center;
+    font-family:"Times New Roman";
+    border-collapse: collapse; 
+    background-color:lightseagreen;
+    color: black;
+    text-decoration:3px;
+} 
+table
+{ 
+  margin: auto; 
+
+}
+</style>
+
+<script>
+     document.write( "<table><tr><th colspan='3'> NUMBERS FROM 0 TO 10 WITH THEIR SQUARES AND CUBES </th></tr>" );
+     document.write( "<tr><td>Number</td><td>Square</td><td>Cube</td></tr>" );
+    
+    for(var n=0; n<=10; n++)
+    {
+        document.write( "<tr><td>" + n + "</td><td>" + n*n + "</td><td>" + n*n*n + "</td></tr>" ) ;
+    }
+     document.write( "</table>" );
+</script>
+<body>
+</body>
+</html>
