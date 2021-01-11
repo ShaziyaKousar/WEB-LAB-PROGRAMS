@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> 
+    <style>
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+
+
+}
+body{
+  font-family: montserrat;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("calci.jpg");
+  background-position: no-repeat;
+  background-size:cover;
+  
+
+}
+.center{
+  width: 350px;
+  background:coral;
+ border-radius: 45px;
+}
+input[type="text"]{
+  height: 60px;
+  width: 300px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #e1e7ea;
+  color: black;
+  font-size: 39px;
+  font-weight: bolder;
+  text-align: right;
+  padding-right: 20px;
+  background: linear-gradient(#d1dce0,#dfe6e9);
+}
+form .buttons{
+  width: 300px;
+  margin: 10px 25px 0 25px;
+  padding: 10px 0;
+}
+input[type="button"]{
+  width: 59px;
+  height: 55px;
+  margin: 5px;
+  font-size: 29px;
+  line-height: 55px;
+  border-radius: 3px;
+  border: 1px solid #d9d9d9;
+  background: linear-gradient(lightcyan);
+}
+input[type="button"]:hover{
+  transition: .9s;
+  background: linear-gradient(#bfbfbf, #d9d9d9);
+}
+input#clear{
+  background: red;
+  border: 1px solid #cc0000;
+  color: white;
+}
+input#equal{
+  width: 275px;
+  margin: 10px 0 10px 0;
+  font-size: 30px;
+  color: white;
+  background:purple;
+  border: 1px solid #b32a00;
+}
+h1{
+    
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:35px;
+    padding: 9px;
+    float: left;
+    margin-left: 14px;
+}
+#display1
+{
+  height: 40px;
+  width: 180px;
+  margin-top: 15px;
+  border-radius: 4px;
+  border: 2px solid #e1e7ea;
+  color: blue;
+  font-size: 39px;
+  font-weight: bolder;
+  text-align: right;
+  margin-left: 9px;
+  padding-right: 20px;
+  background: linear-gradient(peachpuff,lightblue);
+}
+#GST{
+    font-size: 20px;
+    margin-right:190px;
+    
+}
+#solar
+{
+ margin-top: 10px;
+}
+
+</style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+  
+  <body>
+    
+    <div class="center">
+        <h1>Casio<span id="solar"><input type="text" id="display1" name="display" disabled><br></span><span id="GST">JS-20WX</span></h1>
+      <form name="forms">
+        <input type="text" id="display" name="display" disabled>
+        <div class="buttons">
+          <input type="button"  value="7" onclick="forms.display.value += '7' ">
+          <input type="button"  value="8" onclick="forms.display.value += '8' ">
+          <input type="button"  value="9" onclick="forms.display.value += '9' ">
+          <input type="button"  value="/" onclick="forms.display.value += '/' "><br>
+          <input type="button"  value="4" onclick="forms.display.value += '4' ">
+          <input type="button"  value="5" onclick="forms.display.value += '5' ">
+          <input type="button"  value="6" onclick="forms.display.value += '6' ">
+          <input type="button"  value="*" onclick="forms.display.value += '*' "><br>
+          <input type="button"  value="1" onclick="forms.display.value += '1' ">
+          <input type="button"  value="2" onclick="forms.display.value += '2' ">
+          <input type="button"  value="3" onclick="forms.display.value += '3' ">
+          <input type="button"  value="-" onclick="forms.display.value += '-' "><br>
+          <input type="button"  value="." onclick="forms.display.value += '.' ">
+          <input type="button"  value="0" onclick="forms.display.value += '0' ">
+          <input type="button"  value="+" onclick="forms.display.value += '+' ">
+          <input type="button"  value="C" onclick="forms.display.value  = '' " id="clear"><br>
+          <input type="button"  value="=" id="equal">
+        </div>
+</form>
+</div>
+  </body>
+  <script>
+      $('#equal').click(function(){
+    if (display.value == "") {
+      alert("Please enter any numbers to calculate!.......");
+    }else{
+      document.forms.display.value =
+      eval(document.forms.display.value);
+    }
+  });
+  </script>
+</html>
